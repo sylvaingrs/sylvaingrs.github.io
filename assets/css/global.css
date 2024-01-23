@@ -14,7 +14,7 @@ input, button, textarea, select { font: inherit }
 /* Desktops */
 @media (min-width: 768px) {
     body { 
-        padding: 4% 20%;
+        padding: 4% 15%;
         text-align: center;
         font-family: sans-serif;
     }
@@ -45,7 +45,6 @@ h1 {
 h2 {
     font-size: 42px;
     letter-spacing: 6px;
-    margin-bottom: 48px;
     line-height: 1.2;
     color: #638889;
 }
@@ -62,4 +61,55 @@ h3 {
 p {
     font-size: 20px;
     margin-bottom: 16px;
+}
+
+img {
+    margin: 20px;
+}
+
+.main_header {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(1, 40px);
+    background-color: aquamarine;
+}
+
+.home {
+    text-align: center;
+
+}
+
+.page-1 {
+
+}
+
+.page-2 {
+  
+}
+
+.page-3 {
+}
+
+.page-4 {
+    
+}
+
+.page-5 {
+    
+}
+
+.page-6 {
+    
+}
+
+.page-7 {
+    
+}
+
+.page-8 {
+    
+}
+
+.page-9 {
+    
 }
