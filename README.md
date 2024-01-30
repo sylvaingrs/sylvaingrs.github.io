@@ -1,3 +1,0 @@
-# sylvaingrs.github.io
-
-test
