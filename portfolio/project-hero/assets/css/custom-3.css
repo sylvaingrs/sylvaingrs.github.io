@@ -4,3 +4,9 @@
 
 
 /* =============== Add your custom CSS below =========== */
+
+header h1 {
+    font-family: 'Prata', serif;
+    font-weight: 400;
+    line-height: 1.2
+}
