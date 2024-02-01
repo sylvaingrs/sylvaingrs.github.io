@@ -14,7 +14,7 @@ input, button, textarea, select { font: inherit }
 /* Desktops */
 @media (min-width: 768px) {
     body { 
-        padding: 4% 15%;
+        padding: 4% 10%;
         text-align: center;
         font-family: sans-serif;
     }
@@ -79,37 +79,12 @@ img {
 
 }
 
-.page-1 {
-
+body header h1 {
+    text-align: left;
+    padding: 1%;
 }
 
-.page-2 {
-  
-}
-
-.page-3 {
-}
-
-.page-4 {
-    
-}
-
-.page-5 {
-    
-}
-
-.page-6 {
-    
-}
-
-.page-7 {
-    
-}
-
-.page-8 {
-    
-}
-
-.page-9 {
-    
+body header h2 {
+    text-align: left;
+    padding: 1%;
 }
