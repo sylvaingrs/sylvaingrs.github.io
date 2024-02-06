@@ -10,16 +10,27 @@
     background-color: var(--orange-400)
 } */
 
+/* @media (min-width: 768px) { body { padding: 4% 20% } }
+@media (max-width: 767px) { body { padding: 12% 8% } } */
+
 body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
-    padding: 0;
     max-width: 100%;
     background-color: var(--green-900)
 }
 
+header {
+    margin: 0;
+}
+
 a {
     text-decoration: none;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .project-img-title {
@@ -36,7 +47,9 @@ a {
 
 h1 {
     font-size: 50px;
-    text-align: left;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 h2 {
@@ -65,12 +78,7 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
+    margin: 10px;
 }
 
 img {
@@ -93,9 +101,14 @@ footer {
 }
 
 .about {
-    padding: 50px;
+    padding: 30px;
+    margin: 0px;
     display: flex; 
     justify-content: space-between;
+}
+
+.project {
+    margin: 0px;
 }
 
 .project-container {
@@ -116,6 +129,7 @@ footer {
 .languages {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .languages img {
@@ -139,6 +153,117 @@ footer {
 /* Style lorsque la souris survole le bouton */
 .bouton:hover {
     background-color: #45a049; /* Nouvelle couleur lorsque la souris survole le bouton */
+}
+
+.intro {
+    text-align: center;
+}
+
+/* Pour les ordinateurs de bureau */
+@media (min-width: 768px) {
+
+    main {
+        padding: 4% 10%;
+    }
+
+    .about {
+        text-align: center;
+    }
+    
+}
+
+
+/* Pour les ordinateurs de bureau et les tablettes en mode paysage */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        padding: 4% 13%;
+    }
+
+    header {
+        padding: 4% 5%;
+        margin: 3%;
+    }
+
+    footer {
+        margin: 3%;
+    }
+
+    .about {
+        padding: 0;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .project-container {
+        justify-content: center;
+    }
+
+    .bouton {
+        margin: 10px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 0
+    }
+}
+
+/* Pour les téléphones et tablettes */
+@media (max-width: 767px) {
+    body {
+        padding: 12% 8%;
+    }
+
+    img {
+        max-width: 300px;
+        max-height: 195px;
+    }
+
+    ul {
+        margin: 0;
+        
+        justify-content: center;
+    }
+
+    li {
+        margin: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        justify-content: center;
+        margin: 40px;
+    }
+
+    .header-container {
+        display: block;
+    }
+
+    .project h2 {
+        text-align: center;
+    }
+
+    .languages img {
+        max-width: 80px;
+        max-height: 80px;
+    }
 }
 
 :root {
