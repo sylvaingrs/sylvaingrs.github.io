@@ -1,36 +1,96 @@
-/* header .col-text h2, .col-1 > h3 { line-height: 1.8 }
 
-.img-container img {
-    margin: 20px;
-    max-width: 100px;
-    max-height: 100px;
-}
 
-.container-btn > btn {
-    background-color: var(--orange-400)
-} */
-
-/* @media (min-width: 768px) { body { padding: 4% 20% } }
-@media (max-width: 767px) { body { padding: 12% 8% } } */
-
-body {
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    max-width: 100%;
-    background-color: var(--green-900)
-}
+/*HEADER START*/
 
 header {
     margin: 0;
-}
-
-a {
-    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
+}
+
+.header-container img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.bouton {
+    background-color: #4CAF50; /* Couleur par défaut du bouton */
+    color: white;
+    padding: 12px 23px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+}
+
+.bouton:hover {
+    background-color: #45a049; /* Nouvelle couleur lorsque la souris survole le bouton */
+}
+
+
+/*HEADER END*/
+
+
+
+
+
+
+
+/*MAIN START*/
+
+main h1 {
+    margin-left: 30px;
+    text-align: center;
+}
+
+.about {
+    padding: 30px;
+    margin: 0px;
+    display: flex; 
+    justify-content: space-between;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.intro img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.project {
+    margin: 0px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px; */
+}
+
+.project-img {
+    margin: 20px;
 }
 
 .project-img-title {
@@ -45,51 +105,49 @@ a {
     color: var(--lime-400)
 }
 
-h1 {
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
+.languages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-h2 {
-    font-size: 45px;
+.languages img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
-p {
-    font-size: 20px;
+.tools {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.tools img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
-section {
-    margin: 60px;
+.big-project {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
+
+.big-project img {
+    max-width: 200px;
+    max-height: 200px;
 }
 
-nav ul li {
-    display: inline;
-    margin: 10px;
-}
 
-img {
-    margin: 5px;
-}
+/*MAIN END*/
 
-.hero {
-    text-align: center;
-    padding: 50px;
-    background-color: #f2f2f2;
-}
+
+
+
+
+
+/*FOOTER START*/
 
 footer {
     background-color: #333;
@@ -100,70 +158,106 @@ footer {
     bottom: 0;
 }
 
-.about {
-    padding: 30px;
-    margin: 0px;
-    display: flex; 
-    justify-content: space-between;
-}
-
-.project {
-    margin: 0px;
-}
-
-.project-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.project-img {
-    margin: 20px;
-}
-
 .contact img {
     max-width: 50px;
     max-height: 50px;
 }
 
-.languages {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/*FOOTER END*/
+
+
+
+
+
+
+/*GLOBAL START*/
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    max-width: 100%;
+    background-color: var(--green-900)
 }
 
-.languages img {
-    max-width: 100px;
-    max-height: 100px;
-}
-
-
-/* Style par défaut du bouton */
-.bouton {
-    background-color: #4CAF50; /* Couleur par défaut du bouton */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
-}
-
-/* Style lorsque la souris survole le bouton */
-.bouton:hover {
-    background-color: #45a049; /* Nouvelle couleur lorsque la souris survole le bouton */
-}
-
-.intro {
+h1 {
+    font-size: 50px;
     text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
 }
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+p {
+    font-size: 20px;
+}
+
+section {
+    margin: 60px;
+}
+
+img {
+    margin: 5px;
+}
+
+/*GLOBAL END*/
+
+/*ANIMATION START*/
+
+.slide-left {
+	-webkit-animation: slide-left 1s ease-out both;
+	        animation: slide-left 1s ease-out both;
+}
+
+/**
+ * ----------------------------------------
+ * animation slide-left
+ * ----------------------------------------
+*/
+
+@-webkit-keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+    100% {
+      -webkit-transform: translateX(-100px);
+              transform: translateX(-100px);
+    }
+}
+
+/*ANIMATION END*/
+
+
+
+
+  
+  
+/*MEDIA QUERIES START*/
+
 
 /* Pour les ordinateurs de bureau */
 @media (min-width: 768px) {
 
     main {
-        padding: 4% 10%;
+        padding: 4% 6%;
     }
 
     .about {
@@ -195,10 +289,6 @@ footer {
 
     main {
         padding: 10px;
-    }
-
-    .project-container {
-        justify-content: center;
     }
 
     .bouton {
@@ -233,7 +323,7 @@ footer {
 
     ul {
         margin: 0;
-        
+
         justify-content: center;
     }
 
@@ -247,15 +337,11 @@ footer {
     }
 
     nav ul li {
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         margin: 40px;
     }
-
-    .header-container {
-        display: block;
-    }
-
     .project h2 {
         text-align: center;
     }
@@ -265,6 +351,12 @@ footer {
         max-height: 80px;
     }
 }
+
+
+
+/*MEDIA QUERIES END*/
+
+
 
 :root {
 
