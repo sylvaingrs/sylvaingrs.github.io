@@ -2,28 +2,28 @@
 
 /*HEADER START*/
 
-header {
-    margin: 0;
+nav {
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
     color: white;
     padding: 15px;
-    text-align: center;
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-container img {
-    max-width: 50px;
-    max-height: 50px;
+    align-items: center;
 }
 
 nav ul {
-    list-style-type: none;
+    margin: 10px;
     padding: 0;
     display: flex;
+}
+
+nav ul li {
+    display: flex;
+}
+
+nav img {
+    max-width: 70px;
+    max-height: 70px;
 }
 
 .bouton {
@@ -39,7 +39,16 @@ nav ul {
 }
 
 .bouton:hover {
-    background-color: #45a049; /* Nouvelle couleur lorsque la souris survole le bouton */
+    background-color: #45a049;
+}
+
+
+header {
+    margin: 0;
+    background-color: #444;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
 
 
@@ -53,16 +62,15 @@ nav ul {
 
 /*MAIN START*/
 
-main h1 {
-    margin-left: 30px;
-    text-align: center;
-}
 
 .about {
     padding: 30px;
     margin: 0px;
-    display: flex; 
-    justify-content: space-between;
+    text-align: left;
+}
+
+.about h1 {
+    display: inline-block;
 }
 
 .intro {
@@ -90,11 +98,26 @@ main h1 {
 }
 
 .project-img {
-    margin: 20px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid var(--amber-400);
+    border-radius: 10px;
+}
+
+.project-img img {
+    border-radius: 20px;
+    margin: 0;
+    transition: transform 0.9s ease;
+}
+
+.project-img:hover img {
+    transform: scale(1.2);
 }
 
 .project-img-title {
     color: var(--lime-400);
+    margin: 0;
 }
 
 .project-img-title:hover {
@@ -106,6 +129,9 @@ main h1 {
 }
 
 .languages {
+    border: 2px solid var(--amber-400);
+    padding: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -117,6 +143,9 @@ main h1 {
 }
 
 .tools {
+    border: 2px solid var(--amber-400);
+    padding: 15px;
+    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -139,6 +168,24 @@ main h1 {
     max-height: 200px;
 }
 
+
+.ocr {
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.s2 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
 
 /*MAIN END*/
 
@@ -180,6 +227,7 @@ body {
 }
 
 h1 {
+    display: inline-block;
     font-size: 50px;
     text-align: center;
     margin-bottom: 0;
@@ -192,6 +240,7 @@ a {
 
 h2 {
     font-size: 45px;
+    display: inline-block;
 }
 
 p {
@@ -242,6 +291,29 @@ img {
               transform: translateX(-100px);
     }
 }
+
+
+.lien-avec-animation {
+    position: relative;
+}
+
+.lien-avec-animation::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Placez le soulignement en dessous du texte */
+    width: 0%;
+    height: 4px; /* Épaisseur de la ligne de soulignement */
+    background-color: #111; /* Couleur du soulignement */
+    transition: width 0.3s ease; /* Transition pour l'animation de la largeur */
+}
+
+.lien-avec-animation:hover::after {
+    width: 100%; /* Faites croître la largeur du soulignement au survol */
+}
+
+
+
 
 /*ANIMATION END*/
 

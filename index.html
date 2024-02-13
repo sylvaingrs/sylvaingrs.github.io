@@ -18,7 +18,7 @@
     <!-- <link rel="stylesheet" href="https://lunevedy.com/assets/2.0/css/lunevedy.min.css" /> -->
 
     <link rel="stylesheet" href="assets/css/custom.css"/>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,32 +41,39 @@
 
 
 <body>
-    <header>
-        <div class="header-container">
-            <img src="assets/img/apple-touch-icon.png" alt="icon">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html" class="bouton">Home</a>
-                    </li>
-                    <li>
-                        <a href="portfolio/index.html" class="bouton">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="contact/index.html" class="bouton">Contact</a>
-                    </li>
-                    <li>
-                        <a href="exercices.html" class="bouton">Exercices</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        
-        <h1 class="slide-left">Sylvain Gross</h1>
+    <nav>
+        <img src="assets/img/apple-touch-icon.png" alt="icon">
+        <ul>
+            <li>
+                <div class="bouton">
+                    <a href="index.html">
+                        <span>Home</span>
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <div class="bouton">
+                    <a href="portfolio/index.html">
+                        <span>Portfolio</span>
+                        <i class="fa-solid fa-address-book"></i>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a href="contact/index.html" class="bouton">Contact</a>
+            </li>
+            <li>
+                <a href="exercises/exercices.html" class="bouton">Exercices</a>
+            </li>
+        </ul>
+    </nav>
 
+    <header>
         <section class="about">
+            <h1 class="lien-avec-animation">
+                Sylvain Gross
+            </h1>
             <div class="intro">
                 <h2>Hi, I'm a full-stack developper</h2>
                 <p>
@@ -75,8 +82,10 @@
                 <img src="assets/img/sun.png" alt="Sun">
             </div>
         </section>
+    </header>
+    <main>
         <section class="project">
-            <h2>Quelques projets</h2>
+            <h2 class="lien-avec-animation">Quelques projets</h2>
             <div class="project-container">
                 <div class="project-img">
                     <a href="portfolio/crypto-wallet/index.html">
@@ -130,7 +139,7 @@
         </section>
     
         <section>
-            <h2>My learning languages</h2>
+            <h2 class="lien-avec-animation">My learning languages</h2>
             <div class="languages">
                 <img src="assets/img/css-dark.png" alt="css">
                 <img src="assets/img/HTML_Logo.png" alt="html">
@@ -141,11 +150,10 @@
                 <img src="assets/img/Python_Logo.png" alt="python">
                 <img src="assets/img/OCAML_Logo.png" alt="ocaml">
                 <img src="assets/img/Kotlin_Logo.png" alt="kotlin">
-    
             </div>
         </section>
         <section>
-            <h2>My tools</h2>
+            <h2 class="lien-avec-animation">My tools</h2>
             <div class="tools">
                 <img src="assets/img/Git-04.png" alt="git">
                 <img src="assets/img/Vim-01.png" alt="vim">
@@ -156,10 +164,26 @@
         </section>
     
         <section>
-            <h2>My big project</h2>
+            <h2 class="lien-avec-animation">My big project</h2>
             <div class="big-project">
-                <img src="assets/img/sudoku.png" alt="sudoku">
-                <img src="assets/img/squidify_light.png" alt="squidify" style="border-radius: 10px;">
+                <div class="ocr">
+                    <img src="assets/img/sudoku.png" alt="sudoku">
+                    <p>
+                        Optical Character Recognition
+                    </p>
+                    <p>
+                        (C)
+                    </p>
+                </div>
+                <div class="s2">
+                    <img src="assets/img/squidify_light.png" alt="squidify" style="border-radius: 10px;">
+                    <p>
+                        Application Project
+                    </p>
+                    <p>
+                        (C#)
+                    </p>
+                </div>
             </div>
         </section>
     </main>

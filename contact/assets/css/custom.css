@@ -1,0 +1,61 @@
+
+
+
+/* Style général du formulaire */
+#email-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Style des lignes du formulaire */
+.form-row {
+    margin-bottom: 20px;
+}
+
+/* Style des libellés */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style des champs de saisie */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style du bouton de soumission */
+#btn-submit {
+    background-color: #007bff; /* Bleu */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+}
+
+/* Style des icônes à l'intérieur du bouton */
+#btn-submit i {
+    margin-left: 5px;
+}
+
+/* Style du pied de page du formulaire */
+.form-footer {
+    text-align: center;
+}
+
+
+.form-container {
+
+}
