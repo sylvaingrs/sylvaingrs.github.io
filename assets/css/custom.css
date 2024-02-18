@@ -26,7 +26,7 @@ nav img {
     max-height: 70px;
 }
 
-.bouton {
+.bouton-nav {
     background-color: #4CAF50; /* Couleur par défaut du bouton */
     color: white;
     padding: 12px 23px;
@@ -38,7 +38,7 @@ nav img {
     transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
 }
 
-.bouton:hover {
+.bouton-nav:hover {
     background-color: #45a049;
 }
 
@@ -79,6 +79,14 @@ header {
     text-align: left;
 }
 
+.intro-main {
+    display: flex;
+}
+
+.intro-main p {
+    margin: 20px 20px 20px 0px;
+}
+
 .intro img {
     max-width: 500px;
     max-height: 500px;
@@ -98,11 +106,20 @@ header {
 }
 
 .project-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     overflow: hidden;
     padding: 10px;
     margin: 5px;
     border: 2px solid var(--amber-400);
     border-radius: 10px;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
 }
 
 .project-img img {
@@ -111,22 +128,38 @@ header {
     transition: transform 0.9s ease;
 }
 
-.project-img:hover img {
-    transform: scale(1.2);
+.project-img img:hover {
+    transform: scale(1.1);
 }
 
-.project-img-title {
+.project-img-button {
     color: var(--lime-400);
     margin: 0;
 }
 
-.project-img-title:hover {
+.project-img-button:hover {
     color: var(--rose-500);
 }
 
-.project-img-title:visited {
+.project-img-button:visited {
     color: var(--lime-400)
 }
+
+
+.bouton-project {
+    background-color: #0284C7; /* Couleur par défaut du bouton */
+    color: white;
+    padding: 12px 23px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+}
+
+
+
 
 .languages {
     border: 2px solid var(--amber-400);

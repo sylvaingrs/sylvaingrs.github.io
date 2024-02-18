@@ -45,7 +45,7 @@
         <img src="assets/img/apple-touch-icon.png" alt="icon">
         <ul>
             <li>
-                <div class="bouton">
+                <div class="bouton-nav">
                     <a href="index.html">
                         <span>Home</span>
                         <i class="fa-solid fa-house"></i>
@@ -53,7 +53,7 @@
                 </div>
             </li>
             <li>
-                <div class="bouton">
+                <div class="bouton-nav">
                     <a href="portfolio/index.html">
                         <span>Portfolio</span>
                         <i class="fa-solid fa-address-book"></i>
@@ -61,10 +61,10 @@
                 </div>
             </li>
             <li>
-                <a href="contact/index.html" class="bouton">Contact</a>
+                <a href="contact/index.html" class="bouton-nav">Contact</a>
             </li>
             <li>
-                <a href="exercises/exercices.html" class="bouton">Exercices</a>
+                <a href="exercises/exercices.html" class="bouton-nav">Exercices</a>
             </li>
         </ul>
     </nav>
@@ -76,24 +76,33 @@
             </h1>
             <div class="intro">
                 <h2>Hi, I'm a full-stack developper</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusantium quidem voluptatibus laboriosam temporibus quaerat totam voluptatem eligendi natus, in obcaecati quod consequatur quo quasi saepe atque animi, velit aspernatur?
-                </p>
-                <img src="assets/img/sun.png" alt="Sun">
+                <div class="intro-main">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro accusantium quidem voluptatibus laboriosam temporibus quaerat totam voluptatem eligendi natus, in obcaecati quod consequatur quo quasi saepe atque animi, velit aspernatur?
+                    </p>
+                    <img src="assets/img/sun.png" alt="Sun">
+                </div>
             </div>
         </section>
     </header>
     <main>
         <section class="project">
-            <h2 class="lien-avec-animation">Quelques projets</h2>
+
+            <h2 class="lien-avec-animation">Some projects</h2>
+
             <div class="project-container">
                 <div class="project-img">
                     <a href="portfolio/crypto-wallet/index.html">
                         <img src="assets/img/project-crypto-wallet.jpg" alt="crypto">
-                        <p class="project-img-title">
-                            View project
-                        </p>
                     </a>
+                    <div class="description">
+                        <b>
+                            Smooth Smoothies
+                        </b>
+                        <div class="bouton-project">
+                            <a href="portfolio/crypto-wallet/index.html">View project</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="project-img">
                     <a href="portfolio/fashion/index.html">
@@ -129,7 +138,7 @@
                 </div>
                 <div class="project-img">
                     <a href="exercices.html">
-                        <img src="assets/img/exercices.png" alt="exercices">
+                        <img src="assets/img/store.png" alt="store">
                         <p class="project-img-title">
                             View project
                         </p>
