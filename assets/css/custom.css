@@ -72,8 +72,6 @@ header {
 }
 
 .intro {
-    display: flex;
-    flex-direction: column;
     text-align: left;
 }
 
@@ -92,7 +90,7 @@ header {
 
 .project {
     margin: 0px;
-    background-color: #756AB6;
+    background-color: #935f73;
     border-radius: 10px;
     padding: 15px;
 }
@@ -111,7 +109,6 @@ header {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    overflow: hidden;
     padding: 10px;
     margin: 5px;
     /* border: 2px solid var(--amber-400); */
@@ -121,6 +118,11 @@ header {
 .description {
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.description b {
+    margin-top: 10px;
 }
 
 .project-img img {
@@ -148,8 +150,7 @@ header {
 
 
 .bouton-project {
-    background-color: #0284C7; /* Couleur par défaut du bouton */
-    color: white;
+    background-color: #4299b3; /* Couleur par défaut du bouton */
     padding: 12px 23px;
     margin: 10px;
     border: none;
@@ -158,6 +159,18 @@ header {
     font-size: 16px;
     transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
 }
+
+.bouton-project a {
+    color: black;
+}
+
+.bouton-project a:hover {
+    color: #333333;
+}
+
+/* .bouton-project a:visited {
+    color: grey;
+} */
 
 
 
@@ -169,6 +182,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #935f73;
 }
 
 .languages img {
@@ -183,6 +197,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: #935f73;
 }
 
 .tools img {
@@ -210,6 +225,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #935f73;
 }
 
 .s2 {
@@ -219,6 +235,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #935f73;
 }
 
 /*MAIN END*/
@@ -231,7 +248,7 @@ header {
 /*FOOTER START*/
 
 footer {
-    background-color: #333;
+    background-color: #2D3250;
     color: white;
     text-align: center;
     padding: 10px;
@@ -242,6 +259,18 @@ footer {
 .contact img {
     max-width: 50px;
     max-height: 50px;
+}
+
+.privacy a {
+    color: white;
+}
+
+.privacy a:hover {
+    color: grey;
+}
+
+.privacy a:visited {
+    color: gray;
 }
 
 /*FOOTER END*/
