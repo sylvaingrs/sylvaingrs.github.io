@@ -5,8 +5,9 @@
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #2D3250;
-    padding: 15px;
+    background-color: #121629;
+    padding-left: 15px;
+    padding-right: 15px;
     align-items: center;
 }
 
@@ -26,7 +27,7 @@ nav img {
 }
 
 .bouton-nav {
-    background-color: #449bb5;
+    background-color: #ff8906;
     color: black;
     padding: 12px 23px;
     margin: 10px;
@@ -38,14 +39,12 @@ nav img {
 }
 
 .bouton-nav:hover {
-    background-color: #52bad9;
+    background-color: #f25f4c;
 }
 
 
 header {
     margin: 0;
-    color: #31304D;
-
     text-align: center;
 }
 
@@ -64,7 +63,8 @@ header {
     padding: 30px;
     margin: 0px;
     text-align: left;
-    background-color: #5C8374;
+    color: #a7a9be;
+    background-color: #0f0e17;
 }
 
 .about h1 {
@@ -90,7 +90,7 @@ header {
 
 .project {
     margin: 0px;
-    background-color: #935f73;
+    background-color: #121629;
     border-radius: 10px;
     padding: 15px;
 }
@@ -123,6 +123,8 @@ header {
 
 .description b {
     margin-top: 10px;
+    color: var(--gray-400);
+    font-size: 20px;
 }
 
 .project-img img {
@@ -150,7 +152,7 @@ header {
 
 
 .bouton-project {
-    background-color: #4299b3; /* Couleur par défaut du bouton */
+    background-color: #ff8906; /* Couleur par défaut du bouton */
     padding: 12px 23px;
     margin: 10px;
     border: none;
@@ -160,12 +162,12 @@ header {
     transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
 }
 
-.bouton-project a {
-    color: black;
+.bouton-project:hover {
+    background-color: #f25f4c;
 }
 
-.bouton-project a:hover {
-    color: #333333;
+.bouton-project a {
+    color: black;
 }
 
 /* .bouton-project a:visited {
@@ -182,7 +184,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #935f73;
+    background-color: #121629;
 }
 
 .languages img {
@@ -197,7 +199,7 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #935f73;
+    background-color: #121629;
 }
 
 .tools img {
@@ -225,7 +227,8 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #935f73;
+    background-color: #121629;
+    color: var(--gray-400);
 }
 
 .s2 {
@@ -235,7 +238,8 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #935f73;
+    background-color: #121629;
+    color: var(--gray-400);
 }
 
 /*MAIN END*/
@@ -248,7 +252,7 @@ header {
 /*FOOTER START*/
 
 footer {
-    background-color: #2D3250;
+    background-color: #121629;
     color: white;
     text-align: center;
     padding: 10px;
@@ -266,11 +270,11 @@ footer {
 }
 
 .privacy a:hover {
-    color: grey;
+
 }
 
 .privacy a:visited {
-    color: gray;
+    color: purple;
 }
 
 /*FOOTER END*/
@@ -286,7 +290,7 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     max-width: 100%;
-    background-color: #424769;
+    background-color: #0f0e17;
 }
 
 h1 {
@@ -295,6 +299,7 @@ h1 {
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
+    color: var(--gray-200);
 }
 
 a {
@@ -304,6 +309,8 @@ a {
 h2 {
     font-size: 45px;
     display: inline-block;
+    color: var(--gray-200);
+    letter-spacing: 1px;
 }
 
 p {
@@ -367,7 +374,7 @@ img {
     bottom: -2px; /* Placez le soulignement en dessous du texte */
     width: 0%;
     height: 4px; /* Épaisseur de la ligne de soulignement */
-    background-color: #111; /* Couleur du soulignement */
+    background-color: #ff8906; /* Couleur du soulignement */
     transition: width 0.3s ease; /* Transition pour l'animation de la largeur */
 }
 
@@ -451,19 +458,28 @@ img {
         padding: 12% 8%;
     }
 
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-main img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
     img {
         max-width: 300px;
         max-height: 195px;
     }
 
-    ul {
-        margin: 0;
-
-        justify-content: center;
-    }
-
     li {
-        margin: 40px;
+        margin: 10px;
     }
 
     h1 {
@@ -471,12 +487,6 @@ img {
         text-align: center;
     }
 
-    nav ul li {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin: 40px;
-    }
     .project h2 {
         text-align: center;
     }

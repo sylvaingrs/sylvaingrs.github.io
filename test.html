@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .navbar {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        }
+
+        .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        }
+
+        .hamburger span {
+        height: 2px;
+        width: 25px;
+        background-color: white;
+        margin-bottom: 4px;
+        display: block;
+        }
+
+        .menu {
+        display: flex;
+        overflow-x: auto;
+        }
+
+        .menu button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin-right: 10px;
+        }
+
+        @media only screen and (max-width: 768px) {
+        .hamburger {
+            display: flex;
+        }
+
+        .menu {
+            display: none;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .menu.show {
+            display: flex;
+        }
+        }
+    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barre de défilement pour smartphone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="menu" id="menu">
+      <button>Bouton 1</button>
+      <button>Bouton 2</button>
+      <button>Bouton 3</button>
+      <!-- Ajoutez autant de boutons que vous le souhaitez -->
+    </div>
+  </div>
+  <script>
+    document.getElementById('hamburger').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>
