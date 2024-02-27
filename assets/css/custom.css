@@ -42,6 +42,9 @@ nav img {
     background-color: #f25f4c;
 }
 
+.bouton-nav span {
+    margin-right: 5px;
+}
 
 header {
     margin: 0;
@@ -93,6 +96,11 @@ header {
     background-color: #121629;
     border-radius: 10px;
     padding: 15px;
+    transition: background-color 0.5s ease;
+}
+
+.project:hover {
+    background-color: #232a4f;
 }
 
 .project-container {
@@ -170,6 +178,19 @@ header {
     color: black;
 }
 
+/* .bouton-project b {
+    color: black;
+} */
+
+.bouton-project i {
+    font-size: 17px;
+}
+
+.bouton-project span {
+    margin-right: 10px;
+    font-size: 17px;
+}
+
 /* .bouton-project a:visited {
     color: grey;
 } */
@@ -185,6 +206,12 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #121629;
+
+    transition: background-color 0.5s ease;
+}
+
+.languages:hover {
+    background-color: #232a4f;
 }
 
 .languages img {
@@ -200,6 +227,12 @@ header {
     justify-content: space-around;
     flex-wrap: wrap;
     background-color: #121629;
+
+    transition: background-color 0.5s ease
+}
+
+.tools:hover {
+    background-color: #232a4f;
 }
 
 .tools img {
@@ -229,7 +262,25 @@ header {
     padding: 20px;
     background-color: #121629;
     color: var(--gray-400);
+    transition: background-color 0.5s ease;
 }
+
+.ocr:hover {
+    background-color: #232a4f;
+}
+
+.ocr img {
+    transition: transform 0.9s ease;
+}
+
+.ocr img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
 
 .s2 {
     /* border: 2px solid blue; */
@@ -240,6 +291,19 @@ header {
     padding: 20px;
     background-color: #121629;
     color: var(--gray-400);
+    transition: background-color 0.5s ease
+}
+
+.s2:hover {
+    background-color: #232a4f;
+}
+
+.s2 img {
+    transition: transform 0.9s ease;
+}
+
+.s2 img:hover {
+    transform: scale(1.05);
 }
 
 /*MAIN END*/
@@ -468,6 +532,14 @@ img {
         align-items: center;
     }
 
+    nav ul li {
+        margin: 5px;
+    }
+
+    .intro-main {
+        flex-direction: column;
+    }
+
     .intro-main img {
         max-width: 300px;
         max-height: 300px;
@@ -476,10 +548,6 @@ img {
     img {
         max-width: 300px;
         max-height: 195px;
-    }
-
-    li {
-        margin: 10px;
     }
 
     h1 {
@@ -501,6 +569,47 @@ img {
 
 /*MEDIA QUERIES END*/
 
+
+/*TEST START*/
+
+/* Ajoutez ces styles dans votre feuille de style CSS */
+
+/* .hamburger-menu {
+    display: none; 
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+
+.change .bar:nth-child(1) {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar:nth-child(2) {opacity: 0;}
+
+.change .bar:nth-child(3) {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+@media screen and (max-width: 767px) {
+    .hamburger-menu {
+        display: block; 
+    }
+
+} */
+
+/*TEST END*/
 
 
 :root {
