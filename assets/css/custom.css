@@ -5,7 +5,7 @@
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: #121629;
+    background-color: var(--background-div);
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
@@ -28,7 +28,7 @@ nav img {
 
 .bouton-nav {
     background-color: #ff8906;
-    color: black;
+    color: rgb(106, 0, 106);;
     padding: 12px 23px;
     margin: 10px;
     border: none;
@@ -40,6 +40,10 @@ nav img {
 
 .bouton-nav:hover {
     background-color: #f25f4c;
+}
+
+.bouton-nav a {
+    color: rgb(106, 0, 106);
 }
 
 .bouton-nav span {
@@ -67,7 +71,7 @@ header {
     margin: 0px;
     text-align: left;
     color: #a7a9be;
-    background-color: #0f0e17;
+    background-color: var(--background);
 }
 
 .about h1 {
@@ -84,6 +88,7 @@ header {
 
 .intro-main p {
     margin: 20px 20px 20px 0px;
+    line-height: 30px;
 }
 
 .intro img {
@@ -91,16 +96,36 @@ header {
     max-height: 500px;
 }
 
+.about-me {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0px;
+    text-align: left;
+    color: #a7a9be;
+    background-color: var(--background-div);
+  transition: background-color 0.5s ease;
+}
+
+.about-me:hover {
+    background-color: var(--background-div-hover);
+}
+
+.about-me p {
+    color: #a7a9be;
+    font-size: 25px;
+    line-height: 35px;
+}
+
 .project {
     margin: 0px;
-    background-color: #121629;
+    background-color: var(--background-div);
     border-radius: 10px;
     padding: 15px;
     transition: background-color 0.5s ease;
 }
 
 .project:hover {
-    background-color: #232a4f;
+    background-color: var(--background-div-hover);
 }
 
 .project-container {
@@ -161,6 +186,7 @@ header {
 
 .bouton-project {
     background-color: #ff8906; /* Couleur par défaut du bouton */
+    color: black;
     padding: 12px 23px;
     margin: 10px;
     border: none;
@@ -172,10 +198,6 @@ header {
 
 .bouton-project:hover {
     background-color: #f25f4c;
-}
-
-.bouton-project a {
-    color: black;
 }
 
 /* .bouton-project b {
@@ -205,19 +227,47 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #121629;
+    background-color: var(--background-div);
 
     transition: background-color 0.5s ease;
 }
 
 .languages:hover {
-    background-color: #232a4f;
+    background-color: var(--background-div-hover);
 }
 
 .languages img {
     max-width: 100px;
     max-height: 100px;
+
+    transition: transform 0.9s ease;
 }
+
+.languages img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.project-img img {
+    border-radius: 20px;
+    margin: 0;
+    transition: transform 0.9s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .tools {
     /* border: 2px solid var(--amber-400); */
@@ -226,18 +276,24 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: #121629;
+    background-color: var(--background-div);
 
     transition: background-color 0.5s ease
 }
 
 .tools:hover {
-    background-color: #232a4f;
+    background-color: var(--background-div-hover);
 }
 
 .tools img {
     max-width: 100px;
     max-height: 100px;
+
+    transition: transform 0.9s ease;
+}
+
+.tools img:hover {
+    transform: scale(1.1);
 }
 
 .big-project {
@@ -260,13 +316,13 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #121629;
+    background-color: var(--background-div);
     color: var(--gray-400);
     transition: background-color 0.5s ease;
 }
 
 .ocr:hover {
-    background-color: #232a4f;
+    background-color: var(--background-div-hover);
 }
 
 .ocr img {
@@ -289,13 +345,13 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    background-color: #121629;
+    background-color: var(--background-div);
     color: var(--gray-400);
     transition: background-color 0.5s ease
 }
 
 .s2:hover {
-    background-color: #232a4f;
+    background-color: var(--background-div-hover);
 }
 
 .s2 img {
@@ -316,7 +372,7 @@ header {
 /*FOOTER START*/
 
 footer {
-    background-color: #121629;
+    background-color: var(--background-div);
     color: white;
     text-align: center;
     padding: 10px;
@@ -331,10 +387,6 @@ footer {
 
 .privacy a {
     color: white;
-}
-
-.privacy a:hover {
-
 }
 
 .privacy a:visited {
@@ -354,7 +406,7 @@ body {
     font-family: 'Rubik', sans-serif;
     margin: 0;
     max-width: 100%;
-    background-color: #0f0e17;
+    background-color: var(--background);
 }
 
 h1 {
@@ -368,6 +420,7 @@ h1 {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 h2 {
@@ -441,6 +494,8 @@ img {
     background-color: #ff8906; /* Couleur du soulignement */
     transition: width 0.3s ease; /* Transition pour l'animation de la largeur */
 }
+
+
 
 .lien-avec-animation:hover::after {
     width: 100%; /* Faites croître la largeur du soulignement au survol */
@@ -827,4 +882,10 @@ img {
  --trend-700: #2c4763;
  --trend-800: #1f364d;
  --trend-900: #0e2439;
+
+ --background: #0f0e17;
+
+ --background-div: #121629;
+
+ --background-div-hover: #1f2646;
 }
