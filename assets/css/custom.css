@@ -39,7 +39,7 @@ nav img {
 }
 
 .bouton-nav:hover {
-    background-color: #f25f4c;
+    background-color: var(--orange-second);
 }
 
 .bouton-nav a {
@@ -132,9 +132,6 @@ header {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px; */
 }
 
 .project-img {
@@ -183,9 +180,26 @@ header {
     color: var(--lime-400)
 }
 
+.project-js {
+    margin: 20px;
+    color: var(--gray-300);
+    background-color: rgb(22, 92, 56);
+    border-radius: 10px;
+    padding: 13px;
+
+    width: 350px;
+    box-sizing: border-box;
+}
+
+.transparent {
+    margin: 20px;
+    width: 350px;
+    background-color: transparent;
+}
+
 
 .bouton-project {
-    background-color: #ff8906; /* Couleur par défaut du bouton */
+    background-color: var(--orange-first); 
     color: black;
     padding: 12px 23px;
     margin: 10px;
@@ -193,11 +207,11 @@ header {
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+    transition: background-color 0.3s ease;
 }
 
 .bouton-project:hover {
-    background-color: #f25f4c;
+    background-color: var(--orange-second);
 }
 
 /* .bouton-project b {
@@ -491,7 +505,7 @@ img {
     bottom: -2px; /* Placez le soulignement en dessous du texte */
     width: 0%;
     height: 4px; /* Épaisseur de la ligne de soulignement */
-    background-color: #ff8906; /* Couleur du soulignement */
+    background-color: var(--orange-first); /* Couleur du soulignement */
     transition: width 0.3s ease; /* Transition pour l'animation de la largeur */
 }
 
@@ -888,4 +902,10 @@ img {
  --background-div: #121629;
 
  --background-div-hover: #1f2646;
+
+ --orange-first: #ff8906;
+
+ --orange-second: #f25f4c;
+
+ --orange-third: #e53170;
 }

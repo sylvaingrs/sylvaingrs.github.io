@@ -73,10 +73,14 @@
         </ul>
     </nav>
     
-    <header class="theme-light text-center-mobile">
-        <div class="container-text w-1140px">
-            <h1>Get in touch</h1>
-            <h2>Have a project you would like to discuss? Let's make something great together! Email me at <a href="mailto:sylvain.gross@outlook.fr?subject=Mail from my Personal Website">email@example.com</a> or use the form below to let me know a little more about your objectives and I'll get back to you.</h2>
+    <header>
+        <div>
+            <h1 class="lien-avec-animation">
+                Get in touch
+            </h1>
+            <h2>
+                Have a project you would like to discuss? Let's make something great together! Email me at <a href="mailto:sylvain.gross@outlook.fr?subject=Mail from my Personal Website">email@example.com</a> or use the form below to let me know a little more about your objectives and I'll get back to you.
+            </h2>
         </div>
         
     </header>
@@ -84,7 +88,7 @@
         
     <!-- main content with sections -->
     <main>
-
+<!-- 
         <section class="theme-light section-selector-1 cols-2-half flex-row-reverse">
 
             <div class="col-2 col-text form-container">
@@ -115,7 +119,23 @@
 
             </div>
 
-        </section>
+        </section> -->
+        <div class="form-container">
+            <form action="https://formspree.io/f/mayrqrzk" method="POST" class="form">
+                <label>
+                    Your email:
+                    <input type="email" name="email" placeholder="email" required>
+                </label>
+                <label>
+                    Your message:
+                    <textarea name="message"></textarea>
+                </label>
+                <!-- your other form fields go here -->
+                <button type="submit" class="bouton-nav">
+                    Send
+                </button>
+            </form>
+        </div>
    
     </main>
  
@@ -126,7 +146,7 @@
             <img src="../assets/img/Linkedin-13.png" alt="linkedin">
         </div>
         <p>
-            &copy; 2024 Portfolio de Sylvain
+            &copy; 2024 Sylvain's Portfolio
         </p>
         <p class="privacy">
             <a href="../privacy.html">Privacy &amp; legal</a>
