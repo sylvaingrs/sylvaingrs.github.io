@@ -182,18 +182,30 @@ header {
 
 .project-js {
     margin: 20px;
-    color: var(--gray-300);
-    background-color: rgb(22, 92, 56);
+    color: var(--background-div);
+    background-color: #ddbc03;
     border-radius: 10px;
     padding: 13px;
-
+    display: flex;
+    flex-direction: column;
     width: 350px;
-    box-sizing: border-box;
+    height: 240px;
+    align-items: center;
+    /*box-sizing: border-box;*/
 }
 
+.project-js div {
+    background-color: var(--orange-second);
+}
+
+.project-js div:hover {
+    background-color: var(--orange-third);
+}
 .transparent {
-    margin: 20px;
     width: 350px;
+    height: 240px;
+    margin: 20px;
+    padding: 13px;
     background-color: transparent;
 }
 
