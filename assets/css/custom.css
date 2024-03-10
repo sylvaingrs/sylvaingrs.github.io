@@ -183,7 +183,8 @@ header {
 .project-js {
     margin: 20px;
     color: var(--background-div);
-    background-color: #ddbc03;
+    background-color: #d0bd14;
+    /* #ddbc03*/
     border-radius: 10px;
     padding: 13px;
     display: flex;
@@ -195,12 +196,9 @@ header {
 }
 
 .project-js div {
-    background-color: var(--orange-second);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.project-js div:hover {
-    background-color: var(--orange-third);
-}
 .transparent {
     width: 350px;
     height: 240px;
@@ -399,7 +397,7 @@ header {
 
 footer {
     background-color: var(--background-div);
-    color: white;
+    color: var(--gray-200);
     text-align: center;
     padding: 10px;
     /*position: fixed;*/
@@ -417,6 +415,19 @@ footer {
 
 .privacy a:visited {
     color: purple;
+}
+
+.footer-button {
+    margin: 15px;
+}
+
+.footer-button a {
+    margin: 7px;
+    color: var(--gray-200);
+    font-size: 19px;
+    text-decoration: underline;
+    text-decoration-color: wheat;
+    text-underline-offset: 5px;
 }
 
 /*FOOTER END*/
