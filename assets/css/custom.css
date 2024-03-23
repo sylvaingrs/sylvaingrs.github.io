@@ -1,41 +1,133 @@
+/*GLOBAL START*/
 
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    background-color: var(--background);
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: inline-block;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--gray-200);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 45px;
+    display: inline-block;
+    color: var(--gray-200);
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 20px;
+}
+
+section {
+    margin: 60px;
+}
+
+img {
+    margin: 5px;
+}
+
+/*GLOBAL END*/
 
 /*HEADER START*/
 
-nav {
+/* .hidden {
+    display: none;
+} */
+
+/* .nav-displayed {
     display: flex;
+    z-index: 1;
     justify-content: space-between;
     background-color: var(--background-div);
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
+} */
+
+.visible {
+    opacity: 1;
+}
+
+nav {
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: var(--background-div);
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: top 0.3s, opacity 0.5s;
+}
+
+#navbar {
+    display: flex;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: var(--background-div);
+    padding-left: 15px;
+    padding-right: 15px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0;
+    transition: top 0.3s, opacity 0.5s;
+}
+
+#navbar.visible {
+    opacity: 1;
+}
+
+
+.content {
+    height: 2000px;
 }
 
 nav ul {
     margin: 10px;
     padding: 0;
     display: flex;
-}
-
-nav ul li {
-    display: flex;
+    list-style-type: none;
 }
 
 nav img {
-    max-width: 70px;
-    max-height: 70px;
+    max-width: 50px;
+    max-height: 50px;
 }
 
 .bouton-nav {
-    background-color: #ff8906;
-    color: rgb(106, 0, 106);;
+    background-color: var(--orange-first);
+    color: rgb(106, 0, 106);
     padding: 12px 23px;
-    margin: 10px;
+    margin: 0 10px 0 10px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-size: 16px;
-    transition: background-color 0.3s ease; /* Transition fluide pour le changement de couleur */
+    transition: background-color 0.3s ease;
 }
 
 .bouton-nav:hover {
@@ -53,8 +145,44 @@ nav img {
 header {
     margin: 0;
     text-align: center;
+    overflow: hidden;
 }
 
+.image-header-container {
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    color: rgb(190, 193, 214);
+    width: 1550px;
+    height: 770px;
+    background-image: url("../img/landscape1-copie2.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-header-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.9); /* Boîte d'ombre intérieure pour créer l'effet de vignette */
+    pointer-events: none; /* Pour permettre aux événements de pointer à travers */
+}
+
+.image-header-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20%; 
+    background: linear-gradient(to bottom, rgba(15, 14, 23, 0), rgba(15, 14, 23, 1)); 
+}
 
 /*HEADER END*/
 
@@ -66,24 +194,26 @@ header {
 
 /*MAIN START*/
 
-.about {
-    padding: 30px;
+/* .about {
+    padding: 0px;
     margin: 0px;
     text-align: left;
     color: #a7a9be;
     background-color: var(--background);
-}
+} */
 
-.about h1 {
+/* .about h1 {
     display: inline-block;
-}
+} */
 
 .intro {
+    padding: 30px;
     text-align: left;
 }
 
 .intro-main {
     display: flex;
+    justify-content: space-between;
 }
 
 .intro-main p {
@@ -434,53 +564,6 @@ footer {
 
 
 
-
-
-
-/*GLOBAL START*/
-
-body {
-    font-family: 'Rubik', sans-serif;
-    margin: 0;
-    max-width: 100%;
-    background-color: var(--background);
-}
-
-h1 {
-    display: inline-block;
-    font-size: 50px;
-    text-align: center;
-    margin-bottom: 0;
-    margin-top: 0;
-    color: var(--gray-200);
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-h2 {
-    font-size: 45px;
-    display: inline-block;
-    color: var(--gray-200);
-    letter-spacing: 1px;
-}
-
-p {
-    font-size: 20px;
-}
-
-section {
-    margin: 60px;
-}
-
-img {
-    margin: 5px;
-}
-
-/*GLOBAL END*/
-
 /*ANIMATION START*/
 
 .slide-left {
@@ -540,6 +623,96 @@ img {
 
 
 
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.fade-in {
+	-webkit-animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
 
 /*ANIMATION END*/
 
@@ -931,4 +1104,6 @@ img {
  --orange-second: #f25f4c;
 
  --orange-third: #e53170;
+
+ --test: #393952;
 }

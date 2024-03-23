@@ -60,7 +60,7 @@
                 </a>
             </li>
             <li>
-                <a href="index.html">
+                <a href="#">
                     <div class="bouton-nav">
                         <span>Contact</span>
                         <i class="fa-solid fa-user"></i>
@@ -78,9 +78,9 @@
             <h1 class="lien-avec-animation">
                 Get in touch
             </h1>
-            <h2>
+            <p>
                 Have a project you would like to discuss? Let's make something great together! Email me at <a href="mailto:sylvain.gross@outlook.fr?subject=Mail from my Personal Website">email@example.com</a> or use the form below to let me know a little more about your objectives and I'll get back to you.
-            </h2>
+            </p>
         </div>
         
     </header>
@@ -121,19 +121,33 @@
 
         </section> -->
         <div class="form-container">
-            <form action="https://formspree.io/f/mayrqrzk" method="POST" class="form">
+            <!-- <form action="https://formspree.io/f/mayrqrzk" method="POST" class="form">
+                <div class="form__group field">
+                    <input type="email" class="form__field" placeholder="Email" required="">
+                    <label for="Email" class="form__label">Email</label>
+                </div>
+
                 <label>
                     Your email:
                     <input type="email" name="email" placeholder="email" required>
                 </label>
+
                 <label>
                     Your message:
                     <textarea name="message"></textarea>
                 </label>
-                <!-- your other form fields go here -->
+
                 <button type="submit" class="bouton-nav">
                     Send
                 </button>
+            </form> -->
+            <form action="https://formspree.io/f/mayrqrzk" method="POST" class="form">
+                <div class="title">Contact me</div>
+                <input type="email" name="email" placeholder="Your email" class="input" required>
+
+                <textarea placeholder="Your message" required></textarea>
+
+                <button >Submit</button>
             </form>
         </div>
    
@@ -152,7 +166,7 @@
         <div class="footer-button">
             <a href="../index.html">Home</a>
             <a href="../portfolio/index.html">Portfolio</a>
-            <a href="index.html">Contact</a>
+            <a href="#">Contact</a>
         </div>
         <p>
             &copy; 2024 Sylvain's Portfolio

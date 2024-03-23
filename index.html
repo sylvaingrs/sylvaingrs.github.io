@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="assets/css/custom.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
 	<!-- Google Fonts -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,23 +28,27 @@
 
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SRYLMW7P47"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
 
-	gtag('config', 'G-SRYLMW7P47');
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-SRYLMW7P47');
 	</script>
 
 </head>
 
 
 <body>
-    <nav>
+    <nav id="navbar">
         <img src="assets/img/apple-touch-icon.png" alt="icon">
         <ul>
             <li>
-                <a href="index.html">
+                <a href="#">
                     <div class="bouton-nav">
                         <span>Home</span>
                         <i class="fa-solid fa-house"></i>
@@ -59,37 +65,43 @@
             </li>
             <li>
                 <a href="contact/index.html">
-                    <div class="bouton-nav">
+                    <div class="bouton-nav" style="margin-right: 40px;">
                         <span>Contact</span>
                         <i class="fa-solid fa-user"></i>
                     </div>
                 </a>
             </li>
-            <!-- <li>
-                <a href="exercises/exercices.html" class="bouton-nav">Exercices</a>
-            </li> -->
         </ul>
     </nav>
 
+    <!-- <div class="content">
+        
+    </div> -->
+
     <header>
-        <section class="about">
-            <h1 class="lien-avec-animation">
-                Sylvain Gross
-            </h1>
-            <div class="intro">
-                <h2>Hi, this is my first website project</h2>
+        <!-- <div class="image-header-container">
+
+        </div> -->
+        <!-- <img clas="image-header" src="assets/img/landscape1-copie2.jpg" alt="landscape" style="margin: 0;"> -->
+
+
+        <section class="image-header-container">
+            <div class="intro fade-in">
+                <h2>Hi, my name is <span class="lien-avec-animation">Sylvain</span></h2>
                 <div class="intro-main">
                     <p>
-                        I am in my second year of computer engineering at EPITA. This website has been done at my semester abroad when I had time to learn some frontend, backend and mobile application.<br><br> dolor sit amet consectetur adipisicing elit. Adipisci, doloribus, quia quae sed laboriosam laborum quibusdam impedit aliquid odio eius architecto optio temporibus illum cupiditate molestias, vel rem vero beatae nostrum cum id perspiciatis ab at. Adipisci consequatur ut, labore iure nulla repellat fugit dolore tempora ex nam alias libero blanditiis ducimus repudiandae ullam rerum nesciunt quas voluptates doloribus illum quibusdam voluptas quae dolor facilis? Quos est, cumque fugiat magnam suscipit incidunt eos maiores eveniet animi ea quae unde inventore a dicta nobis beatae dolore quis placeat voluptas eum nulla optio delectus culpa. Placeat quod illum debitis totam esse optio!
+                        I am in my second year of computer engineering at EPITA. Let's see my <b>portfolio!</b>
                     </p>
                     <img src="assets/img/seattle-two-color.png" alt="Sun">
                 </div>
             </div>
         </section>
+        <div id="point" style="height: 10px; width: 10px;"></div>
     </header>
     <main>
         <section>
-            <h2 class="lien-avec-animation">About me</h2>
+            <div style="width: 100%; height: 100px;"></div>
+            <h2 class="lien-avec-animation" id="about-me">About me</h2>
             <div class="about-me">
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aspernatur, nisi saepe a voluptatum optio culpa blanditiis ipsam hic quam, quos magnam consequatur earum laborum facilis voluptatem debitis! Aliquam officiis fuga cumque velit obcaecati qui dicta, consequuntur, aspernatur culpa quibusdam dignissimos aut consequatur maiores corporis? Iure ut animi autem obcaecati maiores, expedita explicabo quia dicta pariatur aliquam non cupiditate repudiandae tempora doloremque itaque, labore sed. Tenetur porro dignissimos deserunt quasi recusandae soluta ullam sed laboriosam possimus, asperiores rem quas sequi suscipit nobis nostrum. Reiciendis vel delectus quisquam error, ducimus placeat totam quasi iure culpa numquam quo excepturi minus sint sunt dignissimos ea sapiente atque ipsum, eum incidunt aspernatur fugiat odit? Voluptatibus sunt vitae nemo illum omnis commodi 
@@ -117,7 +129,7 @@
                 <img src="assets/img/Vim-01.png" alt="vim">
                 <img src="assets/img/Visual-studio-02.png" alt="VS">
                 <img src="assets/img/Visual-studio-code-02.png" alt="VSCode">
-                <img src="assets/img/linux.png" alt="linux">
+                <img src="assets/img/ubuntu.png" alt="linux">
             </div>
         </section>
     </main>
@@ -133,7 +145,7 @@
             </a>
         </div>
         <div class="footer-button">
-            <a href="index.html">Home</a>
+            <a href="#">Home</a>
             <a href="portfolio/index.html">Portfolio</a>
             <a href="contact/index.html">Contact</a>
         </div>
@@ -153,7 +165,8 @@
 
 
 
-    <script src="https://lunevedy.com/assets/js/lunevedy.js"></script>
+    <!-- <script src="https://lunevedy.com/assets/js/lunevedy.js"></script> -->
+    <script src="assets/js/style.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
