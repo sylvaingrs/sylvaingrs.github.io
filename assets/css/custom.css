@@ -206,6 +206,22 @@ header {
     display: inline-block;
 } */
 
+.container {
+    background-color: var(--background-div);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 0;
+    transition: background-color 0.5s ease;
+    color: #a7a9be;
+}
+
+.container:hover {
+    background-color: var(--background-div-hover);
+}
+
+
+
+
 .intro {
     padding: 30px;
     text-align: left;
@@ -227,13 +243,7 @@ header {
 }
 
 .about-me {
-    padding: 15px;
-    border-radius: 10px;
-    margin: 0px;
     text-align: left;
-    color: #a7a9be;
-    background-color: var(--background-div);
-  transition: background-color 0.5s ease;
 }
 
 .about-me:hover {
@@ -247,11 +257,7 @@ header {
 }
 
 .project {
-    margin: 0px;
-    background-color: var(--background-div);
-    border-radius: 10px;
-    padding: 15px;
-    transition: background-color 0.5s ease;
+
 }
 
 .project:hover {
@@ -272,23 +278,11 @@ header {
     padding: 10px;
     margin: 5px;
     /* border: 2px solid var(--amber-400); */
-    border-radius: 10px;
-}
-
-.description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.description b {
-    margin-top: 10px;
-    color: var(--gray-400);
-    font-size: 20px;
+    border-radius: 0px;
 }
 
 .project-img img {
-    border-radius: 20px;
+    border-radius: 8px;
     margin: 0;
     transition: transform 0.9s ease;
 }
@@ -310,19 +304,30 @@ header {
     color: var(--lime-400)
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description b {
+    margin-top: 10px;
+    color: var(--gray-400);
+    font-size: 20px;
+}
+
 .project-js {
     margin: 20px;
     color: var(--background-div);
-    background-color: #d0bd14;
-    /* #ddbc03*/
-    border-radius: 10px;
+    background-color: #e9d51f;
+    border: 5px solid #c8aa16;
+    border-radius: 8px;
     padding: 13px;
     display: flex;
     flex-direction: column;
     width: 350px;
     height: 240px;
     align-items: center;
-    /*box-sizing: border-box;*/
 }
 
 .project-js div {
@@ -340,7 +345,7 @@ header {
 
 .bouton-project {
     background-color: var(--orange-first); 
-    color: black;
+    color: var(--gray-900);
     padding: 12px 23px;
     margin: 10px;
     border: none;
@@ -354,40 +359,22 @@ header {
     background-color: var(--orange-second);
 }
 
-/* .bouton-project b {
-    color: black;
-} */
-
 .bouton-project i {
-    font-size: 17px;
+    font-size: 19px;
 }
 
 .bouton-project span {
     margin-right: 10px;
-    font-size: 17px;
+    font-size: 19px;
 }
-
-/* .bouton-project a:visited {
-    color: grey;
-} */
 
 
 
 
 .languages {
-    /* border: 2px solid var(--amber-400); */
-    padding: 15px;
-    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: var(--background-div);
-
-    transition: background-color 0.5s ease;
-}
-
-.languages:hover {
-    background-color: var(--background-div-hover);
 }
 
 .languages img {
@@ -403,40 +390,10 @@ header {
 
 
 
-
-
-
-.project-img img {
-    border-radius: 20px;
-    margin: 0;
-    transition: transform 0.9s ease;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .tools {
-    /* border: 2px solid var(--amber-400); */
-    padding: 15px;
-    border-radius: 10px;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    background-color: var(--background-div);
-
-    transition: background-color 0.5s ease
-}
-
-.tools:hover {
-    background-color: var(--background-div-hover);
 }
 
 .tools img {
@@ -462,21 +419,16 @@ header {
     max-height: 200px;
 }
 
+.big-project p {
+    margin: 10px 0 10px 0;
+}
+
 
 .ocr {
-    /* border: 2px solid blue; */
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: var(--background-div);
     color: var(--gray-400);
-    transition: background-color 0.5s ease;
-}
-
-.ocr:hover {
-    background-color: var(--background-div-hover);
 }
 
 .ocr img {
@@ -487,25 +439,11 @@ header {
     transform: scale(1.05);
 }
 
-
-
-
-
-
 .s2 {
-    /* border: 2px solid blue; */
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: var(--background-div);
     color: var(--gray-400);
-    transition: background-color 0.5s ease
-}
-
-.s2:hover {
-    background-color: var(--background-div-hover);
 }
 
 .s2 img {
