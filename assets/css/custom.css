@@ -283,6 +283,7 @@ header {
 
 .project-img img {
     border-radius: 8px;
+    border: 2px solid var(--gray-400);
     margin: 0;
     transition: transform 0.9s ease;
 }
@@ -423,36 +424,28 @@ header {
     margin: 10px 0 10px 0;
 }
 
-
-.ocr {
+.container-big-project {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
+    width: 280px;
     color: var(--gray-400);
 }
 
-.ocr img {
+.container-big-project img {
     transition: transform 0.9s ease;
 }
 
-.ocr img:hover {
+.container-big-project img:hover {
     transform: scale(1.05);
 }
 
-.s2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--gray-400);
+.container-big-project p {
+    text-align: center;
 }
 
-.s2 img {
-    transition: transform 0.9s ease;
-}
 
-.s2 img:hover {
-    transform: scale(1.05);
-}
 
 /*MAIN END*/
 
