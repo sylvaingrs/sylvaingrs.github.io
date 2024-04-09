@@ -1,0 +1,33 @@
+.bouton-container {
+
+}
+
+.bouton-back {
+    display: inline;
+    background-color: #ff8906;
+    color: black;
+    padding: 12px 23px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+p {
+    color: var(--gray-400)
+}
+
+.bouton-back a {
+    color: rgb(106, 0, 106);
+}
+
+.bouton-back:hover {
+    background-color: #f25f4c;
+}
