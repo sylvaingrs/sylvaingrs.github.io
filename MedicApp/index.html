@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+  <meta charset="UTF-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>MedicApp</title>
+  <script src="flutter.js" defer></script>
+</head>
+<body>
+  <script>
+    window.addEventListener('load', function() {
+      console.log("Page loaded");
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: '"475589118"',
+        }
+      }).then(function(engineInitializer) {
+        console.log("Flutter engine initialized");
+        return engineInitializer.initializeEngine();
+      }).then(function(appRunner) {
+        console.log("Running Flutter app");
+        appRunner.runApp();
+      }).catch(function(error) {
+        console.error("Failed to load Flutter app:", error);
+      });
+    });
+  </script>
+
+  <script type="module">
+    import { initializeApp } from "firebase/app";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+    
+    const firebaseConfig = {
+      apiKey: "AIzaSyDuLvrrvZIasG5IPS604Qx2p-kibSSaU74",
+      authDomain: "medicapp-f915a.firebaseapp.com",
+      projectId: "medicapp-f915a",
+      storageBucket: "medicapp-f915a.appspot.com",
+      messagingSenderId: "1018944412377",
+      appId: "1:1018944412377:web:dc5b688a2a49b1b504fcc8"
+    };
+  
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        console.log("(WEB) User is signed in:", user.email);
+      } else {
+        console.log("(WEB) No user is signed in.");
+      }
+    });
+  </script>
+</body>
+</html>
