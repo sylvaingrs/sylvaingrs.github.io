@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/">
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
   <meta charset="UTF-8">
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <title>MedicApp</title>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A new Flutter project.">
+  
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="medic_appli">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Medic App</title>
+
+  <!-- Web Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- This will be replaced with the base href for the Flutter app -->
+  <base href="/">
+
+  <!-- Include the Flutter engine -->
   <script src="flutter.js" defer></script>
+
+  <script>
+    var baseHref = document.querySelector('base').getAttribute('href');
+    if (location.protocol !== 'file:' && location.pathname.indexOf(baseHref) !== 0) {
+      location.replace(baseHref);
+    }
+  </script>
 </head>
 <body>
-  <script>
-    window.addEventListener('load', function() {
-      console.log("Page loaded");
-      _flutter.loader.loadEntrypoint({
-        serviceWorker: {
-          serviceWorkerVersion: '"475589118"',
-        }
-      }).then(function(engineInitializer) {
-        console.log("Flutter engine initialized");
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        console.log("Running Flutter app");
-        appRunner.runApp();
-      }).catch(function(error) {
-        console.error("Failed to load Flutter app:", error);
-      });
-    });
-  </script>
-
-  <script type="module">
-    import { initializeApp } from "firebase/app";
-    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-    
-    const firebaseConfig = {
-      apiKey: "AIzaSyDuLvrrvZIasG5IPS604Qx2p-kibSSaU74",
-      authDomain: "medicapp-f915a.firebaseapp.com",
-      projectId: "medicapp-f915a",
-      storageBucket: "medicapp-f915a.appspot.com",
-      messagingSenderId: "1018944412377",
-      appId: "1:1018944412377:web:dc5b688a2a49b1b504fcc8"
-    };
+  <!-- Flutter app container -->
+  <div id="flutter_container"></div>
   
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        console.log("(WEB) User is signed in:", user.email);
-      } else {
-        console.log("(WEB) No user is signed in.");
-      }
-    });
-  </script>
+  <!-- Flutter bootstrap script -->
+  <script src="flutter_bootstrap.js" defer></script>
 </body>
 </html>
